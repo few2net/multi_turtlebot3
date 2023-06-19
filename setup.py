@@ -14,7 +14,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
         (os.path.join('share', package_name, 'param'), glob(os.path.join('param','*yaml'))),
-        (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf','*xacro')))
+        (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf','*urdf')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
